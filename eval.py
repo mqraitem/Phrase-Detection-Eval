@@ -8,18 +8,21 @@ parser.add_argument('--dataset', default='refcoco+', type=str)
 parser.add_argument('--set', default='test', type=str)
 args = parser.parse_args()
 
+path_phrases = 'data/%s/%s/phrases.pkl'%(args.dataset, args.set)
+with open(path_phrases, 'rb') as handle:
+    phrases = pickle.load(handle, encoding = 'latin1')
 
-with open('data/%s/%s/phrases.pkl'%(args.dataset, args.set), 'rb') as handle:
-    phrases = pickle.load(handle)
+path_roidb = 'data/%s/%s/roidb.pkl'%(args.dataset, args.set)
+with open(path_roidb, 'rb') as handle:
+    roidb = pickle.load(handle, encoding = 'latin1')
 
-with open('data/%s/%s/roidb.pkl'%(args.dataset, args.set), 'rb') as handle:
-    roidb = pickle.load(handle)
+path_phrase_to_ind = 'data/%s/%s/phrase_to_ind.pkl'%(args.dataset, args.set)
+with open(path_phrase_to_ind, 'rb') as handle:
+    phrase_to_ind = pickle.load(handle, encoding = 'latin1')
 
-with open('data/%s/%s/phrase_to_ind.pkl'%(args.dataset, args.set), 'rb') as handle:
-    phrase_to_ind = pickle.load(handle)
-
-with open('data/%s/%s/train_counts.pkl'%(args.dataset, args.set), 'rb') as handle:
-    train_counts = pickle.load(handle)
+path_train_counts = 'data/%s/%s/train_counts.pkl'%(args.dataset, args.set)
+with open(path_train_counts, 'rb') as handle:
+    train_counts = pickle.load(handle, encoding = 'latin1')
 
 with open(args.dets_path, 'rb') as handle:
     all_boxes = pickle.load(handle)
