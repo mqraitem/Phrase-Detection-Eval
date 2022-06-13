@@ -16,8 +16,8 @@ You can run the evaluation on two datasets: Refcoco+ and Flickr30k Entities. For
 
 You can check out a sample file [here](https://drive.google.com/drive/folders/1nPUe8VwP7eM5bl6bMjMYUiyhlWkEYSAy?usp=sharing). Then, run the following: 
 
-`python python eval.py --dets_path [Path to your scores file from above] ----dataset [DATASET]`
+`python python eval.py --dets_path [Path to your scores file from above] --dataset [DATASET]`
 
 Where DATASET is either refcoco+ or flickr. 
 
-NOTE: The files under data/DATASET where pickled using python 2.7. Therefore, make sure you have encding='latin1' in your pickle.load. 
+NOTE: The files under data/DATASET were pickled using python 2.7. Therefore, make sure you have encoding='latin1' in your pickle.load. 
