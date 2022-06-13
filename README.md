@@ -19,3 +19,5 @@ Then, run the following:
 `python python eval.py --dets_path [Path to your scores file from above] ----dataset [DATASET]`
 
 Where DATASET is either refcoco+ or flickr. 
+
+NOTE: The files under data/DATASET where pickled using python 2.7. Therefore, make sure you have encding='latin1' in your pickle.load. 
