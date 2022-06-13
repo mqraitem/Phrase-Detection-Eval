@@ -9,7 +9,7 @@ You can run the evaluation on two datasets: Refcoco+ and Flickr30k Entities. For
 - Inside the repo data/[DATASET] folder, there are im_ids.pkl and phrases.pkl. Read the image ids in order, then for each image: 
   - load the image 
   - pass the image along with phrases in phrases.pkl to your V+L model
-  - output a num_phrases X 5, where each line follows the structure: 
+  - output a 2d numpy array with dimensions: num_phrases X 5, where each line follows the structure: 
     - x1,y1,x2,y2,score (where the first 4 numbers are the box coordinates that best fit a given phrase) and score is a similarity score between the region and phrase. 
 - Append each 2D numpy score array from each image to a list. 
 - Save that list into a pickle file. 
