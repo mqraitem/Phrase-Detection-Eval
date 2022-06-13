@@ -14,7 +14,7 @@ You can run the evaluation on two datasets: Refcoco+ and Flickr30k Entities. For
 - Append each 2D numpy score array from each image to a list. 
 - Save that list into a pickle file. 
 
-Then, run the following: 
+You can check out a sample file [here](https://drive.google.com/drive/folders/1nPUe8VwP7eM5bl6bMjMYUiyhlWkEYSAy?usp=sharing). Then, run the following: 
 
 `python python eval.py --dets_path [Path to your scores file from above] ----dataset [DATASET]`
 
