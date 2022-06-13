@@ -16,7 +16,7 @@ You can run the evaluation on two datasets: Refcoco+ and Flickr30k Entities. For
 
 You can check out a sample file [here](https://drive.google.com/drive/folders/1nPUe8VwP7eM5bl6bMjMYUiyhlWkEYSAy?usp=sharing). Then, run the following: 
 
-`python python eval.py --dets_path [Path to your scores file from above] --dataset [DATASET]`
+`python eval.py --dets_path [Path to your scores file from above] --dataset [DATASET]`
 
 Where DATASET is either refcoco+ or flickr. 
 
