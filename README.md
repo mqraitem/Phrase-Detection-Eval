@@ -5,7 +5,7 @@ Dependancies: `numpy`, `cython_bbox`
 
 You can run the evaluation on two datasets: Refcoco+ and Flickr30k Entities. For each dataset, follow the instructions: 
 
-- Download the dataset images. [Flickr30k Entities](http://hockenmaier.cs.illinois.edu/DenotationGraph/). [RefCOCO+](https://cocodataset.org/#download). You should download: train2014. 
+- Download the dataset images. [Flickr30k Entities](http://hockenmaier.cs.illinois.edu/DenotationGraph/)/[RefCOCO+](https://cocodataset.org/#download): You should download: train2014. 
 - Inside the repo data/[DATASET] folder, there are im_ids.pkl and phrases.pkl. Read the image ids in order, then for each image: 
   - load the image 
   - pass the image along with phrases in phrases.pkl to your V+L model
